@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+        <nav>
+            <a href="index.html">⬅ Back to Shopping</a>
+        </nav>
+    </header>
+    <main>
+        <section id="cart-items" class="cart-container">
+            <!-- Cart items will be dynamically inserted here -->
+        </section>
+        <div class="cart-summary">
+            <h2>Total: $<span id="cart-total">0.00</span></h2>
+            <button id="checkout-btn">Proceed to Checkout</button>
+            <button id="clear-cart-btn">Clear Cart</button>
+        </div>
+
+        <!-- Checkout Modal -->
+<!-- Checkout Modal -->
+<!-- Checkout Modal -->
+<div id="checkout-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-checkout-modal">&times;</span>
+        <h2>Checkout</h2>
+
+        <!-- Order Summary -->
+        <div id="order-summary">
+            <h3>Order Summary</h3>
+            <ul id="order-items"></ul>
+            <p><strong>Total:</strong> $<span id="total-price">0.00</span></p>
+        </div>
+
+        <!-- Checkout Form -->
+        <form id="checkout-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" placeholder="Enter your address" required></textarea>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" required>
+                <option value="">Select Payment Method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</div>
+
+    </main>
+    <script src="js/cart.js"></script>
+</body>
+</html>
