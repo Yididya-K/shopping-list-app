@@ -15,26 +15,7 @@ A simple and interactive shopping list web application that allows users to brow
 
 ## 🚀 Live Demo
 
-🔗 [**Live Preview**](#) _(Add your GitHub Pages or hosted link here)_
-
----
-
-## 📂 Project Structure
-
-
-```plaintext
-shopping-list-app/
-│── assets/
-│ ├── images/        # Stores product images & logos
-│ ├── data/          # Contains products.json
-│── css/
-│ ├── styles.css     # Main stylesheet
-│ ├── cart.css     # cart stylesheet
-│── js/
-│ ├── script.js      # Main JavaScript logic
-│── index.html       # Main page
-│── cart.html        # Shopping cart page
-│── README.md        # Project documentation
+🔗 [**Live Preview**](https://shopinglistap.netlify.app/)
 
 ---
 
@@ -54,3 +35,23 @@ shopping-list-app/
    ```sh
    git clone https://github.com/Yididya-K/shopping-list-app.git
    cd shopping-list-app
+
+
+## 📂 Project Structure
+
+
+```plaintext
+shopping-list-app/
+│── assets/
+│ ├── images/        # Stores product images & logos
+│ ├── data/          # Contains products.json
+│── css/
+│ ├── styles.css     # Main stylesheet
+│ ├── cart.css     # cart stylesheet
+│── js/
+│ ├── script.js      # Main JavaScript logic
+│── index.html       # Main page
+│── cart.html        # Shopping cart page
+│── README.md        # Project documentation
+
+---
