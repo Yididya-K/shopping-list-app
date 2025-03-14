@@ -8,17 +8,25 @@
 </head>
 <body>
     <header>
-        <h1>Shopping List</h1>
+        <div class="logo-container">
+            <a href="index.html">  <img src="assets/images/logo.png" alt="Shopping List Logo" class="logo"> </a>
+        
+        </div>
         <nav>
-            <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+            <a href="cart.html" class="cart-link">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </a>
         </nav>
     </header>
+    
     <main>
         <div class="filter-container">
             <select id="category-filter">
                 <option value="all">All Categories</option>
                 <option value="Food">Food</option>
                 <option value="Clothes">Clothes</option>
+                <option value="Household">Household</option>
+                <option value="Electronics">Electronics</option>
             </select>
         
             <input type="text" id="search-bar" placeholder="Search products...">

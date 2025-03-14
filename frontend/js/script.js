@@ -9,48 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    const products = [
-        {
-            id: 1,
-            name: "Waffle with Berries",
-            category: "Food",
-            price: 6.50,
-            image: "./assets/images/food1.jpg",
-            description: "A delicious waffle topped with fresh berries and whipped cream."
-        },
-        {
-            id: 2,
-            name: "Vanilla Bean Crème Brûlée",
-            category: "Food",
-            price: 7.00,
-            image: "./assets/images/food2.jpg",
-            description: "A rich vanilla custard with a caramelized sugar topping."
-        },
-        {
-            id: 3,
-            name: "Macaron Mix of Five",
-            category: "Food",
-            price: 8.00,
-            image: "./assets/images/food3.jpg",
-            description: "A mix of five delicious macarons with various flavors."
-        },
-        {
-            id: 4,
-            name: "Men's T-shirt",
-            category: "Clothes",
-            price: 12.00,
-            image: "./assets/images/clothes1.jpg",
-            description: "A comfortable and stylish cotton T-shirt."
-        },
-        {
-            id: 5,
-            name: "Denim Jeans",
-            category: "Clothes",
-            price: 25.00,
-            image: "./assets/images/clothes2.jpg",
-            description: "High-quality denim jeans with a modern fit."
-        }
-    ];
+    let products = []; // Initialize an empty array
+
+    // Fetch products from JSON file
+    fetch("assets/data/products.json")
+        .then(response => response.json())
+        .then(data => {
+            products = data;
+            renderProducts();
+        })
+        .catch(error => console.error("Error loading products:", error));
+
 
     function renderProducts(filterCategory = "all", searchTerm = "") {
         productList.innerHTML = "";
