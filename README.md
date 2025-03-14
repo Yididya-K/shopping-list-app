@@ -3,7 +3,7 @@
 A simple and interactive shopping list web application that allows users to browse products, filter by category, search for items, view details, and add them to the cart. The app also includes a checkout process with form validation.
 
 
- (frontend/assets/images/1.png)
+![Homepage](frontend/assets/images/1.png)
 
 ## 📌 Features
 
