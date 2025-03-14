@@ -6,20 +6,64 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+/* Hero Header (Full Height) */
+.hero-header {
+    background: linear-gradient(to bottom, rgba(15, 65, 15, 0.9), rgba(10, 53, 20, 0.6), rgba(255, 255, 255, 0));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
 
-header {
+   
+    height: 250px;
+    width: 100%;
+}
+
+/* Center Content */
+.hero-header .logo-container,
+.hero-header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
+    padding: 15px 30px;
+}
+.hero-content {
+    margin-top: 20px;
 }
 
-nav a {
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+/* Logo */
+.logo {
+    height: 60px; 
+}
+
+/* Navigation */
+nav {
+    margin-right: 20px;
+}
+
+.back-link {
     color: white;
+    font-size: 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-header {
+        
+        padding: 30px;
+        height: 300px; 
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -181,7 +225,7 @@ nav a {
 }
 
 button {
-    background-color: #28a745;
+    background-color: #e85b50;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -190,10 +234,23 @@ button {
     border-radius: 5px;
     margin: 5px;
 }
-
 button:hover {
+    background-color: rgb(167, 59, 51)
+}
+#checkout-btn {
+    background-color: #28a745;;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+#checkout-btn:hover {
     background-color: #218838;
 }
+
 /* Modal Styling */
 .modal {
     display: none;
@@ -275,6 +332,6 @@ button:hover {
 }
 
 #total-price {
-    font-size: 1.2em;
+    font-size: 1.6em;
     color: #28a745;
 }

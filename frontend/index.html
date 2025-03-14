@@ -7,48 +7,54 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="index.html">  <img src="assets/images/logo.png" alt="Shopping List Logo" class="logo"> </a>
-        
-        </div>
-        <nav>
-            <a href="cart.html" class="cart-link">
-                🛒 Cart (<span id="cart-count">0</span>)
-            </a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Shopping List Logo">
+            </div>
+            <div class="cart">
+                <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+            </div>
         </nav>
-    </header>
-    
-    <main>
-        <div class="filter-container">
-            <select id="category-filter">
-                <option value="all">All Categories</option>
-                <option value="Food">Food</option>
-                <option value="Clothes">Clothes</option>
-                <option value="Household">Household</option>
-                <option value="Electronics">Electronics</option>
-            </select>
         
-            <input type="text" id="search-bar" placeholder="Search products...">
+        <div class="hero-content">
+            <h1>Find Everything You Need</h1>
+            <p>Browse our wide selection of products and shop with ease.</p>
+
+            <!-- Search & Category Filter Inside Hero -->
+            <div class="filter-container">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="Food">Food</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Household">Household</option>
+                </select>
+                <input type="text" id="search-bar" placeholder="Search products...">
+            </div>
         </div>
-        
+    </header>
+
+    <!-- Product List -->
+    <main>
         <section id="product-list" class="grid-container">
             <!-- Products will be loaded dynamically -->
         </section>
-        <!-- Product Modal -->
-<!-- Modal -->
-<div id="product-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modal-product-image" src="" alt="">
-        <h3 id="modal-product-name"></h3>
-        <p id="modal-product-description"></p>
-        <p><strong id="modal-product-price"></strong></p>
-        <button id="add-to-cart-btn">Add to Cart</button>
-    </div>
-</div>
 
+        <!-- Product Modal -->
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-product-image" src="" alt="">
+                <h3 id="modal-product-name"></h3>
+                <p id="modal-product-description"></p>
+                <p><strong id="modal-product-price"></strong></p>
+                <button id="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
     </main>
+
     <script src="js/script.js"></script>
 </body>
 </html>
