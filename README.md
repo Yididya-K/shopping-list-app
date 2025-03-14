@@ -20,9 +20,9 @@ A simple and interactive shopping list web application that allows users to brow
 ---
 
 ## 📂 Project Structure
-shopping-list-app/
-│── assets/
-│ ├── images/ # Stores product images & logos
+ - shopping-list-app/
+ - │── assets/
+ - │ ├── images/ # Stores product images & logos
 │ ├── data/ # Contains products.json
 │── css/
 │ ├── styles.css # Main stylesheet
